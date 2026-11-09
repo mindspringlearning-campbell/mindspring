@@ -1,0 +1,24 @@
+{
+  "name": "MindSpring \u2014 Psychology & Human Development",
+  "short_name": "MindSpring",
+  "description": "Free learning about psychology, human development, lifestyle, and personal growth.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f7f1",
+  "theme_color": "#143b35",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "education",
+    "health",
+    "lifestyle"
+  ],
+  "lang": "en"
+}

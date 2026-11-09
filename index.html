@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#143b35">
+  <meta name="description" content="MindSpring — understand the mind, understand humanity, develop yourself. Free psychology and human-development learning.">
+  <title>MindSpring — Learn about the mind</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="MindSpring home">
+      <span class="brand-mark" aria-hidden="true">✳</span>
+      <span><strong>MindSpring</strong><small>Learn. Understand. Grow.</small></span>
+    </a>
+    <div class="top-actions">
+      <button class="icon-button" id="installBtn" hidden title="Install MindSpring" aria-label="Install MindSpring">↓ <span>Install</span></button>
+      <button class="icon-button" id="themeBtn" title="Toggle color theme" aria-label="Toggle color theme">◐</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">A little knowledge can change a life</p>
+        <h1>Understand the mind.<br><em>Understand yourself.</em></h1>
+        <p class="hero-text">Explore psychology, human development, everyday well-being, and the science of personal growth — one clear lesson at a time.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#explore">Explore lessons <span aria-hidden="true">↗</span></a>
+          <span class="free-note">Always free to learn</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="sun"></div>
+        <div class="leaf leaf-one"></div><div class="leaf leaf-two"></div><div class="leaf leaf-three"></div>
+        <div class="art-caption"><span class="dot"></span> Curiosity grows here</div>
+      </div>
+    </section>
+
+    <section class="welcome-row">
+      <div>
+        <p class="eyebrow dark-eyebrow">Your learning space</p>
+        <h2>Where would you like to begin?</h2>
+      </div>
+      <p class="muted welcome-note">Choose a topic, follow your curiosity, and keep growing at your own pace.</p>
+    </section>
+
+    <section class="category-grid" id="categories" aria-label="Learning categories">
+      <button class="category-card active" data-category="All">
+        <span class="category-icon mint">✳</span><span><strong>All topics</strong><small>Explore everything</small></span><span class="card-arrow">↗</span>
+      </button>
+      <button class="category-card" data-category="Psychology">
+        <span class="category-icon peach">◉</span><span><strong>Psychology & mind</strong><small>Thoughts, feelings, behaviour</small></span><span class="card-arrow">↗</span>
+      </button>
+      <button class="category-card" data-category="Human development">
+        <span class="category-icon lilac">⌁</span><span><strong>Human development</strong><small>Origins and the lifespan</small></span><span class="card-arrow">↗</span>
+      </button>
+      <button class="category-card" data-category="Lifestyle">
+        <span class="category-icon yellow">☼</span><span><strong>Lifestyle & well-being</strong><small>Habits for everyday life</small></span><span class="card-arrow">↗</span>
+      </button>
+      <button class="category-card" data-category="Personal growth">
+        <span class="category-icon blue">↗</span><span><strong>Personal development</strong><small>Build skills and resilience</small></span><span class="card-arrow">↗</span>
+      </button>
+      <button class="category-card" data-category="Study centre">
+        <span class="category-icon rose">▤</span><span><strong>Student learning centre</strong><small>Theories, thinkers, revision</small></span><span class="card-arrow">↗</span>
+      </button>
+    </section>
+
+
+<section class="course-hub" id="psychology-course">
+ <div class="course-intro"><p class="eyebrow">Featured university course · Course 01</p><h2>Introduction to Psychology</h2>
+ <p>Build your understanding from the foundations to university-level perspectives through three learning levels, chapter notes, reflection and knowledge checks.</p>
+ <div class="course-tags"><span>15 chapters</span><span>3 learning levels</span><span>Free learning</span></div></div>
+ <div class="course-layout"><aside class="course-sidebar"><h3>Course chapters</h3><p class="muted">Begin with Chapter 1. The remaining chapters are mapped for staged development.</p><div id="chapterList" class="chapter-list"></div></aside>
+ <article class="course-main" id="chapterPreview"><span class="course-kicker">CHAPTER 01</span><h3>Introduction to Psychology</h3><p>Begin with the meaning, nature, goals and importance of psychology.</p><button class="button button-dark" id="startChapterBtn">Start chapter ↗</button></article></div>
+</section>
+
+    <section class="content-section" id="explore">
+      <div class="section-heading">
+        <div><p class="eyebrow dark-eyebrow">The library</p><h2 id="libraryTitle">Start with a good question</h2></div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search lessons..." aria-label="Search lessons"></label>
+      </div>
+      <div class="filter-row" id="filterRow" aria-label="Lesson filters">
+        <button class="filter-chip selected" data-filter="All">All lessons</button>
+        <button class="filter-chip" data-filter="Beginner">Beginner</button>
+        <button class="filter-chip" data-filter="Intermediate">Intermediate</button>
+        <button class="filter-chip" data-filter="Student guide">Student guide</button>
+      </div>
+      <div class="lesson-grid" id="lessonGrid" aria-live="polite"></div>
+      <p class="empty-state" id="emptyState" hidden>No lessons match that search. Try another keyword or category.</p>
+    </section>
+
+    <section class="daily-card">
+      <div class="daily-symbol">✦</div>
+      <div><p class="eyebrow">A thought to carry with you</p><h2>Growth begins with curiosity, not perfection.</h2><p>Learning about yourself is a process. Give yourself room to ask questions, test ideas, and change your mind when you learn something new.</p></div>
+    </section>
+
+    <section class="saved-section" id="saved">
+      <div class="section-heading"><div><p class="eyebrow dark-eyebrow">Your collection</p><h2>Saved lessons <span class="count" id="savedCount">0</span></h2></div><button class="text-button" id="showAllBtn">Browse library →</button></div>
+      <div class="saved-list" id="savedList"><p class="muted">Save a lesson with the bookmark icon and it will appear here on this device.</p></div>
+    </section>
+
+    <section class="notice">
+      <span class="notice-icon">ⓘ</span>
+      <div><strong>Learning, not diagnosis</strong><p>MindSpring provides general educational information. It does not diagnose conditions or replace a qualified mental-health professional. If you are worried about your mental health, consider speaking with a qualified professional or local health service.</p></div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#"><span class="brand-mark">✳</span><span><strong>MindSpring</strong><small>Understand the mind. Develop yourself.</small></span></a>
+    <div class="footer-links"><a href="#psychology-course">Psychology course</a><a href="#explore">Lessons</a><a href="#saved">Saved lessons</a><a href="#about">About</a></div>
+    <p id="about" class="footer-note">An independent learning project. Content is introductory and should be checked against trusted academic sources.</p>
+    <p class="copyright">© <span id="year"></span> MindSpring · Free for everyone</p>
+  </footer>
+
+  <dialog id="lessonDialog" class="lesson-dialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Close lesson">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+  <script src="app.js"></script>
+  <script src="course.js"></script>
+</body>
+</html>
