@@ -140,7 +140,6 @@ const chapterList=document.getElementById("chapterList"),chapterPreview=document
 let selectedChapter=0,selectedLevel="beginner";
 function renderChapterList(){chapterList.innerHTML=psychologyChapters.map((c,i)=>`<button class="chapter-button ${i===selectedChapter?"active":""}" data-chapter="${i}"><span class="chapter-number">${String(i+1).padStart(2,"0")}</span><span><strong>${c.title}</strong><small>${i===0?"Full notes available":"Course outline"}</small></span></button>`).join("");}
 function renderChapterPreview(){const c=psychologyChapters[selectedChapter];chapterPreview.innerHTML=`<span class="course-kicker">CHAPTER ${String(selectedChapter+1).padStart(2,"0")}</span><h3>${c.title}</h3><p>${c.summary}</p>${selectedChapter===0?'<p class="muted">Three learning levels, examples, reflection, quiz and references.</p>':'<div class="learning-callout"><strong>Course outline</strong><p>Full three-level notes, examples, quiz and references will be developed for this chapter.</p></div>'}<button class="button button-dark" id="startChapterBtn">${selectedChapter===0?"Start chapter":"View chapter outline"} ↗</button>`;document.getElementById("startChapterBtn").addEventListener("click",()=>openCourseChapter(selectedChapter));}
-function 
 function openCourseChapter(i) {
   selectedChapter = i;
   const dialog = document.getElementById("lessonDialog");
