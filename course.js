@@ -170,7 +170,6 @@ function openCourseChapter(i) {
 
   if (dialog.showModal) dialog.showModal();
 }
-(i){selectedChapter=i;const dialog=document.getElementById("lessonDialog"),target=document.getElementById("dialogContent"),c=psychologyChapters[i];if(i!==0){target.innerHTML=`<span class="dialog-category">COURSE 01 · CHAPTER ${String(i+1).padStart(2,"0")}</span><h2 class="dialog-title">${c.title}</h2><div class="dialog-content"><p>${c.summary}</p><div class="learning-callout"><strong>Planned learning levels</strong><p>Beginner: definitions and examples. Intermediate: theories and applications. Advanced: academic discussion and critical evaluation.</p></div><p>This chapter is mapped in the course curriculum and will be developed in sequence.</p></div>`;}else renderChapterContent();if(dialog.showModal)dialog.showModal();}
 
 function renderChapterTwoContent() {
   const target = document.getElementById("dialogContent");
